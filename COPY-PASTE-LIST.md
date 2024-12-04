@@ -1,5 +1,5 @@
 
-# Quill - A Modern Fullstack SaaS-Platform
+# DocMate - A Modern Fullstack SaaS-Platform
 
   
 
