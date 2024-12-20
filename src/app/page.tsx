@@ -187,10 +187,10 @@ export default function Home() {
           </div>
         </div>
         <hr className="my-10" />
-        <div className="flex justify-between items-start">
-          <div className="flex items-start space-x-24 text-sm">
+        <div className="flex md:flex-row flex-col justify-between items-start">
+          <div className="flex md:flex-row flex-col items-start md:space-x-24 space-y-8 md:space-y-0 text-sm">
             <div>
-              <p className="font-bold mb-7 text-lg">Product</p>
+              <p className="font-bold mb-4 md:mb-7 text-lg">Product</p>
               <div className="flex flex-col items-start space-y-4">
                 <Link href="/">Landing Page</Link>
                 <Link href="/">Popup Builder</Link>
@@ -200,7 +200,7 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <p className="font-bold mb-7 text-lg">Use Cases</p>
+              <p className="font-bold mb-4 md:mb-7 text-lg">Use Cases</p>
               <div className="flex flex-col items-start space-y-4">
                 <Link href="/">Web-designers</Link>
                 <Link href="/">Marketers</Link>
@@ -209,7 +209,7 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <p className="font-bold mb-7 text-lg">Resources</p>
+              <p className="font-bold mb-4 md:mb-7 text-lg">Resources</p>
               <div className="flex flex-col items-start space-y-4">
                 <Link href="/">Academy</Link>
                 <Link href="/">Blog</Link>
@@ -220,7 +220,7 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <p className="font-bold mb-7 text-lg">Company</p>
+              <p className="font-bold mb-4 md:mb-7 text-lg">Company</p>
               <div className="flex flex-col items-start space-y-4">
                 <Link href="/">About Us</Link>
                 <Link href="/">Careers</Link>
@@ -231,8 +231,8 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <p className="font-bold mb-7">Follow us</p>
-            <div className="flex space-x-3">
+            <p className="font-bold mt-6 md:mt-0 mb-4 md:mb-7">Follow us</p>
+            <div className="flex space-x-4">
               <Facebook />
               <Youtube />
               <Github />
@@ -242,9 +242,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex justify-between items-center mt-16">
-          <p className="text-sm">&#169;2024 All Rights Reserved</p>
-          <div className="flex space-x-6 text-sm">
+        <div className="flex md:flex-row flex-col-reverse justify-between items-center mt-12 md:mt-20">
+          <p className="text-xs md:text-sm mt-8 md:mt-0">&#169;2024 All Rights Reserved</p>
+          <div className="flex space-x-2 md:space-x-6 text-xs md:text-sm">
             <Link href="/">Privacy Policy</Link>
             <Link href="/">Terms of Use</Link>
             <Link href="/">Sales and Refunds</Link>
