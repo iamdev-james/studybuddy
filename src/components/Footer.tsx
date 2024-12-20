@@ -16,7 +16,7 @@ const Footer = () => {
   return (
     <div>
       {/* Footer section */}
-      <MaxWidthWrapper className="mx-auto mb-32 mt-12 sm:mt-56">
+      <MaxWidthWrapper className="mx-auto mb-32 mt-12 sm:mt-32">
         <div className="flex justify-between items-center">
           <p className="font-bold">DOCMATE.</p>
           <div>
