@@ -52,6 +52,7 @@ export const appRouter = router({
     })
   }),
 
+  // Create a stripe session here
   createStripeSession: privateProcedure.mutation(
     async ({ ctx }) => {
       const { userId } = ctx
@@ -110,6 +111,7 @@ export const appRouter = router({
     }
   ),
 
+  // Messages tracker
   getFileMessages: privateProcedure
     .input(
       z.object({
@@ -176,6 +178,7 @@ export const appRouter = router({
       return { status: file.uploadStatus }
     }),
 
+  // File tracker
   getFile: privateProcedure
     .input(z.object({ key: z.string() }))
     .mutation(async ({ ctx, input }) => {
