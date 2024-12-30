@@ -4,6 +4,7 @@ import { TRPCError, initTRPC } from '@trpc/server'
 const t = initTRPC.create()
 const middleware = t.middleware
 
+// Auth functionalities
 const isAuth = middleware(async (opts) => {
   const { getUser } = getKindeServerSession()
   const user = getUser()
