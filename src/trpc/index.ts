@@ -196,6 +196,7 @@ export const appRouter = router({
       return file
     }),
 
+  // Delete handler
   deleteFile: privateProcedure
     .input(z.object({ id: z.string() }))
     .mutation(async ({ ctx, input }) => {
