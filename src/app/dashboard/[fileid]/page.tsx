@@ -5,3 +5,8 @@ import { getUserSubscriptionPlan } from '@/lib/stripe'
 import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server'
 import { notFound, redirect } from 'next/navigation'
 
+interface PageProps {
+  params: {
+    fileid: string
+  }
+}
