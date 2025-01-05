@@ -127,6 +127,7 @@ const UploadDropzone = ({
                 </div>
               ) : null}
 
+              {/* There is a bug that needs to be fixed here */}
               {isUploading ? (
                 <div className='w-full mt-4 max-w-xs mx-auto'>
                   <Progress
