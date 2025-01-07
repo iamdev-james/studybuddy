@@ -33,7 +33,7 @@ export const POST = async (req: NextRequest) => {
   })
 
   if (!file)
-    return 'commit sake'
+    return new Response('Not found', { status: 404 })
 
   await db.message.create({
     data: {
