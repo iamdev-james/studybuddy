@@ -16,6 +16,7 @@ const Page = async () => {
     }
   })
 
+  // Default re-router handler
   if(!dbUser) redirect('/auth-callback?origin=dashboard')
 
   const subscriptionPlan = await getUserSubscriptionPlan()

@@ -42,6 +42,7 @@ const BillingForm = ({
 
   return (
     <MaxWidthWrapper className='max-w-5xl'>
+      {/* Billing form start */}
       <form
         className='mt-12'
         onSubmit={(e) => {
@@ -82,6 +83,7 @@ const BillingForm = ({
           </CardFooter>
         </Card>
       </form>
+      {/* Billing form ends */}
     </MaxWidthWrapper>
   )
 }
