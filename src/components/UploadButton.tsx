@@ -59,13 +59,12 @@ const UploadDropzone = ({
 
     return interval
   }
-  console.log("Rerendering this component");
+
   return (
     <Dropzone
       multiple={false}
       onDrop={async (acceptedFile) => {
         setIsUploading(true)
-        console.log("Here")
 
         const progressInterval = startSimulatedProgress()
 
