@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom classes are defined here, be careful when editing */
 @layer base {
   :root {
     --background: 0 0% 100%;
