@@ -32,7 +32,7 @@ export async function POST(request: Request) {
     });
   }
 
-  // Subscription validator
+  // Subscription validator block
   if (event.type === "checkout.session.completed") {
     const subscription = await stripe.subscriptions.retrieve(
       session.subscription as string
