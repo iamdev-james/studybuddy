@@ -26,6 +26,7 @@ const BillingForm = ({
 }: BillingFormProps) => {
   const { toast } = useToast()
 
+  // Verifying stripe session here
   const { mutate: createStripeSession, isLoading } =
     trpc.createStripeSession.useMutation({
       onSuccess: ({ url }) => {

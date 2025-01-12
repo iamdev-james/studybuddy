@@ -12,6 +12,8 @@ import { getPineconeClient } from '@/lib/pinecone'
 import { getUserSubscriptionPlan } from '@/lib/stripe'
 import { PLANS } from '@/config/stripe'
 
+// This page contains the core Uploadthings functionalities, do not edit unless authorized 
+
 const f = createUploadthing()
 
 const middleware = async () => {
