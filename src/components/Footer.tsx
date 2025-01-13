@@ -15,7 +15,7 @@ import { buttonVariants } from "@/components/ui/button";
 const Footer = () => {
   return (
     <div>
-      {/* Footer section */}
+      {/* Footer section start */}
       <MaxWidthWrapper className="mx-auto mb-32 mt-12 sm:mt-32">
         <div className="flex justify-between items-center">
           <p className="font-bold">DOCMATE.</p>
@@ -102,6 +102,7 @@ const Footer = () => {
           </div>
         </div>
       </MaxWidthWrapper>
+      {/* Footer section end */}
     </div>
   );
 };
