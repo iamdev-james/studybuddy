@@ -92,12 +92,14 @@ const Messages = ({ fileId }: MessagesProps) => {
             )
         })
       ) : isLoading ? (
+        // Preloader start
         <div className='w-full flex flex-col gap-2'>
           <Skeleton className='h-16' />
           <Skeleton className='h-16' />
           <Skeleton className='h-16' />
           <Skeleton className='h-16' />
         </div>
+        // Prelaoder ends
       ) : (
         <div className='flex-1 flex flex-col items-center justify-center gap-2'>
           <MessageSquare className='h-8 w-8 text-blue-500' />
