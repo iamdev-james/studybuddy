@@ -221,7 +221,7 @@ export const ChatContextProvider = ({
   }
 
   const addMessage = () => sendMessage({ message })
-
+// Another one here
   return (
     // Chat context logics
     <ChatContext.Provider
