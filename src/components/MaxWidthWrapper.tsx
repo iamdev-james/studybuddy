@@ -14,5 +14,4 @@ const MaxWidthWrapper = ({
     </div>
   )
 }
-// An update for the culture
 export default MaxWidthWrapper
