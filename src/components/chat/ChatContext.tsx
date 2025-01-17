@@ -219,7 +219,6 @@ export const ChatContextProvider = ({
   ) => {
     setMessage(e.target.value)
   }
-// One more
   const addMessage = () => sendMessage({ message })
   return (
     // Chat context logics
