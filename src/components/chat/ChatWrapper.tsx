@@ -14,6 +14,7 @@ interface ChatWrapperProps {
   isSubscribed: boolean
 }
 
+// I need to debug this screen well
 const ChatWrapper = ({
   fileId,
   isSubscribed,
