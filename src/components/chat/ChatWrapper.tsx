@@ -14,7 +14,7 @@ interface ChatWrapperProps {
   isSubscribed: boolean
 }
 
-// I need to debug this screen well
+// The issue is with pinecore
 const ChatWrapper = ({
   fileId,
   isSubscribed,
