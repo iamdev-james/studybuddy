@@ -14,7 +14,7 @@ interface ChatWrapperProps {
   isSubscribed: boolean
 }
 
-// I need to debug this screen well
+// The issue is with pinecore
 const ChatWrapper = ({
   fileId,
   isSubscribed,
@@ -108,7 +108,7 @@ const ChatWrapper = ({
         <ChatInput isDisabled />
       </div>
     )
-// Debugging block end
+// Debugging block end (Pinecore)
   return (
     <ChatContextProvider fileId={fileId}>
       <div className='relative min-h-full bg-zinc-50 flex divide-y divide-zinc-200 flex-col justify-between gap-2'>
