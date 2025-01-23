@@ -113,7 +113,9 @@ const Dashboard = ({subscriptionPlan}: PageProps) => {
             ))}
         </ul>
       ) : isLoading ? (
-        <Skeleton height={100} className='my-2' count={3} />
+        <div className='flex'>
+          <Skeleton height={100} className='my-2' count={3} />
+        </div>
       ) : (
         <div className='mt-16 flex flex-col items-center gap-2'>
           <Ghost className='h-8 w-8 text-zinc-800' />
