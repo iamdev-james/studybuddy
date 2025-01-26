@@ -24,6 +24,7 @@ const PdfFullscreen = ({ fileUrl }: PdfFullscreenProps) => {
   const { width, ref } = useResizeDetector()
 
   return (
+    // PDF full screen controller start
     <Dialog
       open={isOpen}
       onOpenChange={(v) => {
@@ -76,6 +77,7 @@ const PdfFullscreen = ({ fileUrl }: PdfFullscreenProps) => {
         </SimpleBar>
       </DialogContent>
     </Dialog>
+    // PDF full screen controller end
   )
 }
 
