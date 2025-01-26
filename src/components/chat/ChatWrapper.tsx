@@ -33,6 +33,7 @@ const ChatWrapper = ({
       }
     )
 
+  // File is loading
   if (isLoading)
     return (
       <div className='relative min-h-full bg-zinc-50 flex divide-y divide-zinc-200 flex-col justify-between gap-2'>
@@ -52,6 +53,7 @@ const ChatWrapper = ({
       </div>
     )
 
+  //  File is Processing 
   if (data?.status === 'PROCESSING')
     return (
       <div className='relative min-h-full bg-zinc-50 flex divide-y divide-zinc-200 flex-col justify-between gap-2'>
@@ -71,6 +73,8 @@ const ChatWrapper = ({
       </div>
     )
 
+  // Change Pinecore 
+  // Failed block is affected by file upload and db management
   if (data?.status === 'FAILED')
     return (
       <div className='relative min-h-full bg-zinc-50 flex divide-y divide-zinc-200 flex-col justify-between gap-2'>
@@ -108,7 +112,6 @@ const ChatWrapper = ({
         <ChatInput isDisabled />
       </div>
     )
-// Debugging block end (Pinecore)
   return (
     <ChatContextProvider fileId={fileId}>
       <div className='relative min-h-full bg-zinc-50 flex divide-y divide-zinc-200 flex-col justify-between gap-2'>
