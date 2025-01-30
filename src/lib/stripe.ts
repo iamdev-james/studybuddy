@@ -39,6 +39,7 @@ export async function getUserSubscriptionPlan() {
     }
   }
 
+  // Checking DB subscription status
   const isSubscribed = Boolean(
     dbUser.stripePriceId &&
       dbUser.stripeCurrentPeriodEnd && // 86400000 = 1 day
