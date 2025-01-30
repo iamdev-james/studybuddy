@@ -13,6 +13,7 @@ export async function getUserSubscriptionPlan() {
   const { getUser } = getKindeServerSession()
   const user = getUser()
 
+  // Checking user status
   if (!user.id) {
     return {
       ...PLANS[0],
@@ -28,6 +29,7 @@ export async function getUserSubscriptionPlan() {
     },
   })
 
+  // Check if user exist
   if (!dbUser) {
     return {
       ...PLANS[0],
