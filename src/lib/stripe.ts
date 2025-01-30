@@ -50,7 +50,7 @@ export async function getUserSubscriptionPlan() {
     ? PLANS.find((plan) => plan.price.priceIds.test === dbUser.stripePriceId)
     : null
 
-  // Concellation stsus
+  // Cancellation status
   let isCanceled = false
   if (isSubscribed && dbUser.stripeSubscriptionId) {
     const stripePlan = await stripe.subscriptions.retrieve(
