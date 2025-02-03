@@ -111,7 +111,7 @@ const Dashboard = ({ subscriptionPlan }: PageProps) => {
         </div>
       )}
     </main>
-    // Main dashboard container start
+    // Main dashboard container end
   );
 };
 
