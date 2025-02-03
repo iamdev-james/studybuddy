@@ -77,6 +77,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
+          {/* Socials start */}
           <div>
             <p className="font-bold mt-6 md:mt-0 mb-4 md:mb-7">Follow us</p>
             <div className="flex space-x-4">
@@ -88,6 +89,7 @@ const Footer = () => {
               <Figma />
             </div>
           </div>
+          {/* Socials end */}
         </div>
         <div className="flex md:flex-row flex-col-reverse justify-between items-center mt-12 md:mt-20">
           <p className="text-xs md:text-sm mt-8 md:mt-0">
